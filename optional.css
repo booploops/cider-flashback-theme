@@ -1,0 +1,49 @@
+.chrome-top {
+  [sfc-name="HeaderSearch"] {
+    height: 100%;
+    border-left: 1px solid var(--chromeLines);
+    border-right: 1px solid var(--chromeLines);
+
+    input {
+      height: 100%;
+      border-radius: 0px;
+      font-size: 1em;
+      box-shadow: 0;
+      border: 0;
+    }
+
+    .input-button {
+      height: 100%;
+      border-radius: 0px;
+    }
+  }
+}
+/* #app-viewport {
+  background: #111;
+} */
+
+@keyframes zoomIn22 {
+  from {
+    transform: scale(0.9);
+    border-radius: 10px;
+  }
+  90% {
+    border-radius: 10px;
+    
+  }
+  to {
+    transform: scale(1);
+    border-radius: 0px;
+  }
+}
+
+
+body[app-mode="browser"] {
+  #app-viewport {
+    animation: zoomIn22 0.6s var(--appleEase);
+  }
+}
+
+.player-modal {
+  animation: zoomIn22 0.6s var(--appleEase);
+}

@@ -1,0 +1,20 @@
+/* Modernized Cider button with text */
+
+[sfc-name="MainMenuButton"] {
+    aspect-ratio: unset;
+    width: 110px;
+    height: 38px;
+    border-radius: 10px;
+    background-image: url('../assets/AppChromeButtonDark.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: .75em;
+    >*{
+        opacity: 0;
+    }
+
+    body.body--light & {
+        background-image: url('../assets/AppChromeButtonLight.svg');
+    }
+}

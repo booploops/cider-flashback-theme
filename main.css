@@ -1,0 +1,13 @@
+@import url("./cider-button.css");
+@import url("./shell.css");
+@import url("./chromeTopGlass.css");
+
+:root {
+  --winui-background: rgba(39, 39, 39, 0.2);
+  --winui-background_solid: rgba(39, 39, 39, 1);
+  --chrome-lines: rgb(200 200 200 / 10%);
+}
+
+body.body--light {
+  --chromeLines: rgb(0 0 0 / 10%);
+}

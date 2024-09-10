@@ -1,0 +1,203 @@
+.ns-split-view {
+  background: #0000004d;
+  border-top: 1px solid var(--chromeLines);
+  border-bottom: 1px solid var(--chromeLines);
+
+  body.body--light & {
+    background: #ffffff4d;
+  }
+}
+
+.ns-sidebar.ns-sidebar--left {
+  border-right: 1px solid var(--chromeLines);
+}
+
+.ns-sidebar.ns-sidebar--right {
+  border-left: 1px solid var(--chromeLines);
+}
+
+.new-shell-page-container {
+  margin-right: 0;
+  border-radius: 0;
+  box-shadow: unset;
+}
+
+.cider-sidebar {
+  padding-top: 0.5em;
+}
+
+.sidebar_nav-btn .nav-icon {
+  color: #fff;
+
+  body.body--light & {
+    color: #000;
+  }
+}
+
+.sidebar_nav-btn.active {
+  background: rgb(200 200 200 / 20%);
+
+  body.body--light & {
+    background: rgb(0 0 0 / 10%);
+    color: black;
+  }
+}
+
+/* Components */
+
+[sfc-name="SidebarProfile"] {
+  &.profile-tab {
+    padding: 0;
+
+    .profile-btn {
+      border-radius: 0;
+      padding: 0.5em 1em;
+      grid-template-columns: 30px 1fr;
+      font-size: 0.9em;
+      border-top: 1px solid var(--chromeLines);
+
+      .profile-artwork {
+        width: 16px;
+      }
+
+      .profile-info {
+        display: grid;
+        align-items: center;
+        justify-content: flex-start;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+[sfc-name="AMProgressBar"] {
+  .overlay-progress {
+    display: none;
+  }
+  .volumeBar {
+    input[type="range"] {
+      opacity: 1;
+      --progressColor: var(--musicKeyColor);
+
+      &::-webkit-slider-thumb {
+        opacity: 0;
+        transform: scale(1);
+        -webkit-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        background: var(--keyColor);
+        cursor: default;
+        transition: opacity 0.1s var(--appleEase),
+          transform 0.1s var(--appleEase);
+      }
+
+      &:hover {
+        &::-webkit-slider-thumb {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+[sfc-name="LCDPlayerMavericks"] {
+  .amp-lcd-container, .player {
+    height: 100%;
+  }
+
+  .player {
+    border-radius:0;
+    grid-template-columns: 60px 1fr;
+  }
+
+  .player-artwork {
+    width: 45px;
+    height: 45px;
+  }
+
+  .lcd-info {
+    padding-top: 10px;
+  }
+
+  [sfc-name="AMProgressMavericks"] {
+    input[type=range] {
+      --progressColor: var(--keyColor);
+    }
+  }
+
+}
+
+[sfc-name="LCDPlayer"] {
+  &.lcdPlayer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .lcdControls {
+      width: 100%;
+    }
+
+  }
+  
+
+  .LCDArtwork {
+    width: 70px;
+    height: 70px;
+  }
+}
+.playback-action-button {
+  width: 40px;
+  height: 38px;
+  ._svg-icon {
+    --size: 38px;
+  }
+}
+
+.am-playback-actions {
+  margin: 0;
+}
+.volume-slider {
+  overflow: visible;
+}
+
+[sfc-name="AMVolumeSlider"] {
+  .overlay-progress {
+    display: none;
+  }
+
+  .volume-range {
+    opacity: 1;
+  }
+
+  &:hover {
+    .volume-range {
+      &::-webkit-slider-thumb {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+body.body--dark .q-menu {
+  background: #111111;
+  backdrop-filter: unset;
+  padding: 4px;
+}
+
+.well {
+  background: rgba(200, 200, 200, 0.05);
+  border-radius: 10px;
+  padding: var(--contentInnerPadding);
+  margin-top: 16px;
+  padding: 16px 32px;
+}
+
+[sfc-name="Artist"] {
+  .page-stack-item {
+    background: rgba(200, 200, 200, 0.05);
+    border-radius: 10px;
+    padding: 16px 0px;
+  }
+}

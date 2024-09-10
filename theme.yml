@@ -1,0 +1,21 @@
+name: Cider Flashback
+stylesheets:
+  - file: main.css
+    name: Main Stylesheet
+    description: The main stylesheet for the theme
+
+  - file: cider-button-style/classic-base.css
+    name: Cider Button with Text
+    description: Shows the full Cider logo as the menu button circa Cider 1.3~
+
+  - file: cider-button-style/classic-13.css
+    name: (Cider Button with Text) Use Old Logo
+    description: Use the Classic logo instead of the modern one. Requires Cider Button with Text
+
+  - file: cider-button-style/classic-00.css
+    name: (Cider Button with Text) Use Old Alpha Logo
+    description: Use the logo from the Cider 1.x alpha. Requires Cider Button with Text
+
+  - file: cider-button.css
+    name: Cider Button (Standalone)
+    description: Gives any other theme the Cider button

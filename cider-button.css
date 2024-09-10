@@ -1,0 +1,16 @@
+/* cider-button */
+
+[sfc-name="MainMenuButton"] {
+    aspect-ratio: 1/1;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-image: url('./assets/logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: .75em;
+    >*{
+        opacity: 0;
+    }
+}

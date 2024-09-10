@@ -1,0 +1,9 @@
+/* Cider Alpha */
+
+[sfc-name="MainMenuButton"] {
+    background-image: url('../assets/AppChromeOldest.svg');
+
+    body.body--light & {
+        background-image: url('../assets/AppChromeOldestLight.svg');
+    }
+}
