@@ -147,17 +147,7 @@
     height: 70px;
   }
 }
-.playback-action-button {
-  width: 40px;
-  height: 38px;
-  ._svg-icon {
-    --size: 38px;
-  }
-}
 
-.am-playback-actions {
-  margin: 0;
-}
 .volume-slider {
   overflow: visible;
 }
