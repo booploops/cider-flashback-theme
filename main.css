@@ -1,6 +1,7 @@
 @import url("./cider-button.css");
 @import url("./shell.css");
 @import url("./chromeTopGlass.css");
+@import url("./settings.css");
 
 :root {
   --winui-background: rgba(39, 39, 39, 0.2);

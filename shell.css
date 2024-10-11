@@ -22,8 +22,10 @@
   box-shadow: unset;
 }
 
-.cider-sidebar {
-  padding-top: 0.5em;
+#app-viewport[data-layout-type="mojave"] {
+  .cider-sidebar {
+    padding-top: 0.5em;
+  }
 }
 
 .sidebar_nav-btn .nav-icon {
@@ -103,12 +105,13 @@
 }
 
 [sfc-name="LCDPlayerMavericks"] {
-  .amp-lcd-container, .player {
+  .amp-lcd-container,
+  .player {
     height: 100%;
   }
 
   .player {
-    border-radius:0;
+    border-radius: 0;
     grid-template-columns: 60px 1fr;
   }
 
@@ -122,11 +125,10 @@
   }
 
   [sfc-name="AMProgressMavericks"] {
-    input[type=range] {
+    input[type="range"] {
       --progressColor: var(--keyColor);
     }
   }
-
 }
 
 [sfc-name="LCDPlayer"] {
@@ -138,9 +140,7 @@
     .lcdControls {
       width: 100%;
     }
-
   }
-  
 
   .LCDArtwork {
     width: 70px;
